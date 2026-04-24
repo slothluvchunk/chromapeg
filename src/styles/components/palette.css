@@ -1,0 +1,25 @@
+.color-palette {
+  display: grid;
+  justify-content: center;
+  gap: var(--peg-gap);
+  padding: var(--space-md);
+  background: var(--surface-card);
+  border-top: 1px solid var(--surface-border);
+}
+
+/* Grid columns locked by color count — no staggered wrapping */
+.color-palette--cols-4 {
+  grid-template-columns: repeat(4, var(--peg-size));
+}
+
+.color-palette--cols-3 {
+  grid-template-columns: repeat(3, var(--peg-size));
+}
+
+/* Tablet and up: slightly more breathing room between swatches */
+@media (min-width: 600px) {
+  .color-palette {
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+  }
+}

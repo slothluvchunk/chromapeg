@@ -1,0 +1,44 @@
+.color-peg {
+  width: var(--peg-size);
+  height: var(--peg-size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  border: 2px solid transparent;
+  transition: transform 0.1s, box-shadow 0.1s;
+  background: var(--surface-border);
+}
+
+.color-peg--sm {
+  width: var(--peg-size-sm);
+  height: var(--peg-size-sm);
+  font-size: 0.8rem;
+}
+
+.color-peg--interactive:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.color-peg--interactive:active {
+  transform: scale(0.96);
+}
+
+.color-peg--selected {
+  box-shadow: 0 0 0 3px var(--accent);
+}
+
+.color-peg--empty {
+  background: transparent;
+  border: 2px dashed var(--surface-border);
+}
+
+.color-peg__icon {
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}

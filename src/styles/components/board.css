@@ -1,0 +1,14 @@
+.board {
+  padding: 0 var(--space-md);
+}
+
+.board__history {
+  display: flex;
+  flex-direction: column;
+}
+
+.guess-history {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}

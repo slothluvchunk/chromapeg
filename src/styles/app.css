@@ -1,0 +1,18 @@
+body {
+  font-family: var(--font-sans);
+  background: var(--surface-bg);
+  color: var(--text-primary);
+  min-height: 100dvh;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+}

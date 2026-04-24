@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--surface-card);
+  border-bottom: 1px solid var(--surface-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.header__subtitle {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.header__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.header__counter {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.header__btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.header__btn--new {
+  background: var(--accent);
+  color: #fff;
+}
+
+.header__btn--new:hover {
+  background: var(--accent-hover);
+}
+
+.header__btn--settings {
+  background: var(--surface-border);
+  color: var(--text-primary);
+  font-size: 1rem;
+  padding: 6px 10px;
+}
+
+.header__btn--settings:hover {
+  background: #475569;
+}

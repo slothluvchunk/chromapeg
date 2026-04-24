@@ -1,0 +1,35 @@
+:root {
+  /* Layout */
+  --max-width: 420px;
+  --peg-size: 46px;
+  --peg-size-sm: 32px;
+  --peg-gap: 7px;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Feedback colors — these are UI chrome, not game colors */
+  --feedback-exact: #22c55e;
+  --feedback-present: #f59e0b;
+  --feedback-absent: #d1d5db;
+
+  /* Surface */
+  --surface-bg: #0f172a;
+  --surface-card: #1e293b;
+  --surface-border: #334155;
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  --text-muted: #94a3b8;
+
+  /* Interactive */
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}
